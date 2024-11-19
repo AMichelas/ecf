@@ -1,0 +1,235 @@
+/* Réinitialisation des marges et des paddings par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style global du body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Styles de base pour le header */
+header.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #6BB800;
+    color: white;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Logo dans le header */
+header.menu .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Lien du logo (enlever le soulignement et rendre le texte blanc) */
+header.menu .logo a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Navigation dans le header */
+header.menu nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+header.menu nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 5px;
+}
+
+header.menu nav ul li a:hover {
+    background-color: white;
+    color: #6BB800;
+}
+
+/* Bouton hamburger (menu mobile) */
+header.menu .burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+header.menu .burger div {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+/* Menu responsive pour les petits écrans */
+@media (max-width: 768px) {
+    header.menu {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 30px;
+    }
+
+    header.menu nav ul {
+        display: none; /* Masquer le menu par défaut */
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    header.menu nav ul li {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    /* Afficher le menu lorsque le burger est cliqué */
+    header.menu nav.active {
+        display: flex;
+    }
+
+    /* Afficher le bouton burger */
+    header.menu .burger {
+        display: flex;
+    }
+
+    /* Animation du burger en croix lors du clic */
+    header.menu .burger.open div:nth-child(1) {
+        transform: rotate(45deg);
+        position: relative;
+        top: 10px;
+    }
+
+    header.menu .burger.open div:nth-child(2) {
+        opacity: 0;
+    }
+
+    header.menu .burger.open div:nth-child(3) {
+        transform: rotate(-45deg);
+        position: relative;
+        top: -10px;
+    }
+}
+
+/* Styles pour des écrans très petits */
+@media (max-width: 480px) {
+    header.menu .logo {
+        font-size: 1.5em;
+    }
+
+    header.menu nav ul li a {
+        font-size: 1em;
+        padding: 8px;
+    }
+}
+
+
+/* Style pour le titre principal de la page */
+header.page-header {
+    background-color: #6BB800; /* Une couleur attrayante pour le titre */
+    padding: 30px 0;
+    text-align: center;
+    color: white;
+}
+
+header.page-header h1 {
+    font-size: 36px;
+}
+
+/* Style pour la section des habitats */
+section {
+    margin: 40px auto;
+    text-align: center;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+/* Style pour chaque habitat */
+.habitat-item {
+    margin: 15px;
+    text-align: center;
+    max-width: 250px;
+    width: 100%;
+}
+
+.habitat-button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    display: inline-block;
+    width: 100%;
+}
+
+.habitat-button img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.habitat-button:hover img {
+    transform: scale(1.05);
+}
+
+.habitat-name {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Style pour la gestion d'une image d'absence */
+.habitat-item p {
+    color: #888;
+    font-size: 16px;
+}
+
+/* Responsivité pour les écrans plus petits */
+@media (max-width: 768px) {
+    header.menu .logo a {
+        font-size: 24px;
+    }
+
+    header.menu nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header.page-header h1 {
+        font-size: 28px;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    .habitat-item {
+        max-width: 90%;
+    }
+}

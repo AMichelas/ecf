@@ -1,0 +1,74 @@
+/* Styles du header pour qu'il ne soit pas modifié par d'autres styles */
+header.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #6BB800;
+    color: white;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header.menu .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+header.menu .logo a {
+    color: white;
+    text-decoration: none;
+}
+
+header.menu nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+header.menu nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 5px;
+}
+
+header.menu nav ul li a:hover {
+    background-color: white;
+    color: #6BB800;
+}
+
+@media (max-width: 768px) {
+    header.menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header.menu nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header.menu nav ul li {
+        width: 100%;
+        text-align: left;
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header.menu .logo {
+        font-size: 1.5em;
+    }
+
+    header.menu nav ul li a {
+        font-size: 1em;
+        padding: 8px;
+    }
+}

@@ -1,0 +1,125 @@
+/* Style général du formulaire d'inscription */
+.signup-form {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style des champs de saisie */
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"],
+.signup-form select {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Placeholder */
+.signup-form input::placeholder,
+.signup-form select {
+    color: #888;
+}
+
+/* Style du bouton */
+.signup-form button {
+    width: 100%;
+    padding: 14px;
+    background-color: #6BB800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Changement de couleur du bouton au survol */
+.signup-form button:hover {
+    background-color: #559c00;
+}
+
+/* Style pour les champs focus */
+.signup-form input:focus,
+.signup-form select:focus {
+    border-color: #6BB800;
+    outline: none;
+}
+
+/* Responsivité */
+@media (max-width: 480px) {
+    .signup-form {
+        padding: 15px;
+    }
+
+    .signup-form input,
+    .signup-form select,
+    .signup-form button {
+        padding: 10px;
+    }
+}
+
+/* Style pour le message de succès */
+.success-message {
+    background-color: #4CAF50; /* Vert pour signaler le succès */
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #388e3c;
+    box-shadow: 0 4px 8px rgba(0, 128, 0, 0.2);
+    transition: opacity 0.3s ease;
+}
+
+/* Animation pour afficher le message */
+.success-message {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.return-btn {
+    background-color: #a00000;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    width: auto;
+    transition: background-color 0.3s;
+    margin-top: 20px; /* Ajout d'une marge pour espacer le bouton du formulaire */
+    margin: 0 auto;  /* Centrer le bouton */
+    display: block;  /* Faire en sorte que le bouton soit un bloc */
+}
+
+.return-btn:hover {
+    background-color: #ff0000;
+}
+
+.return-btn:active {
+    background-color: #ff0000;
+}

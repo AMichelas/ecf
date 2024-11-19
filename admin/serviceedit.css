@@ -1,0 +1,206 @@
+/* Styles de base */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1, h2 {
+    color: #6BB800;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 2.5em;
+}
+
+h2 {
+    margin-top: 30px;
+    font-size: 2em;
+}
+
+/* Styles spécifiques au contenu principal */
+main {
+    flex: 1;
+    padding: 20px; /* Espacement autour du contenu principal */
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-color: #6BB800;
+    outline: none;
+}
+
+button {
+    background-color: #6BB800;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #558b00;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Liste des services */
+div.service-item {
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Liens et boutons de suppression */
+a {
+    text-decoration: none;
+}
+
+a button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+a button:hover {
+    background-color: #c0392b;
+}
+
+/* Séparation */
+hr {
+    border: 1px solid #ddd;
+    margin: 40px 0;
+}
+
+/* Styles du footer déjà définis */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    margin-top: auto; /* Force le footer à être en bas */
+}
+
+footer .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer .horaires-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+footer .jour {
+    flex-basis: 30%;
+    padding: 10px;
+    text-align: center;
+}
+
+footer .jour p {
+    margin: 5px 0;
+}
+
+.return-btn {
+    background-color: #a00000;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    width: auto;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+    margin: 0 auto;
+    display: block;
+}
+
+.return-btn:hover {
+    background-color: #ff0000;
+}
+
+.return-btn:active {
+    background-color: #ff0000;
+}
+
+/* Responsive design pour le contenu principal */
+@media (max-width: 768px) {
+    main {
+        padding: 15px;
+    }
+
+    input[type="text"], textarea {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    button {
+        padding: 8px 16px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.7em;
+    }
+}

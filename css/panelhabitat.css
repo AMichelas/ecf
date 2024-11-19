@@ -1,0 +1,88 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h2.admin-title, h3.section-title {
+    text-align: center;
+    color: #333;
+}
+
+h3.section-title {
+    margin-top: 30px;
+}
+
+/* Form styles */
+.admin-form {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.admin-form label {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    display: block;
+    color: #555;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.input-field:focus {
+    border-color: #6BB800;
+    outline: none;
+}
+
+.submit-button {
+    background-color: #6BB800;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+.submit-button:hover {
+    background-color: #5a9b00;
+}
+
+/* Habitat list styles */
+.habitat-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.habitat-item {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.delete-link {
+    color: #ff4d4d;
+    text-decoration: none;
+}
+
+.delete-link:hover {
+    text-decoration: underline;
+}

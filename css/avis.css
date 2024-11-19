@@ -1,0 +1,51 @@
+.avis-container {
+    width: 100%;
+    height: 300px;  /* Hauteur du conteneur pour un affichage confortable */
+    overflow: hidden;
+    position: relative;
+    border: 2px solid #6BB800;  /* Bordure verte avec une couleur marquée */
+    border-radius: 10px;  /* Coins arrondis */
+    background: #f7f7f7;  /* Fond gris clair */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Ombre légère */
+}
+
+.avis-wrapper {
+    display: flex;
+    flex-direction: column;
+    animation: defilementVertical 20s linear infinite;  /* Animation de défilement vertical */
+}
+
+.avis {
+    width: 100%;  /* Chaque avis prend la largeur complète du conteneur */
+    padding: 15px;
+    background: #fff;  /* Fond blanc pour chaque avis */
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;  /* Espacement entre les avis */
+    box-sizing: border-box;
+    transition: transform 0.5s ease-in-out;
+}
+
+.avis h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.avis p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Animation de défilement vertical */
+@keyframes defilementVertical {
+    0% {
+        transform: translateY(100%);  /* Démarre en bas */
+    }
+    50% {
+        transform: translateY(0);  /* L'avis devient visible */
+    }
+    100% {
+        transform: translateY(-100%);  /* L'avis disparaît en haut */
+    }
+}

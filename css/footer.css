@@ -1,0 +1,42 @@
+
+.footer {
+    background-color: #000000; /* Fond gris foncé */
+    color: #ffffff; /* Texte en blanc pour le contraste */
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px; /* Espace au-dessus du footer */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ombre douce pour un effet de relief */
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.horaires-container {
+    display: flex;
+    justify-content: space-between; /* Espacement uniforme entre chaque jour */
+    flex-wrap: nowrap; /* Empêche les éléments de passer à la ligne suivante */
+    margin-top: 20px;
+}
+
+.jour {
+    text-align: center;
+    margin: 10px;
+    flex: 1 1 120px; /* Permet une flexibilité tout en ayant une taille minimale */
+    max-width: 120px; /* Limite la largeur maximale de chaque élément */
+}
+
+.jour p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.jour p:first-child {
+    font-weight: bold; /* Met le jour en gras */
+}

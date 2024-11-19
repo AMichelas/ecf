@@ -1,0 +1,76 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif; 
+}
+
+
+/* Section avec image de fond */
+.hero-section {
+    background-image: url('img/background.jpg'); /* Chemin relatif */
+    background-size: cover; /* L'image couvre toute la section */
+    background-position: center; /* Centrer l'image */
+    height: 100vh; /* Prendre toute la hauteur de la fenêtre */
+    width: 100%; /* Prendre toute la largeur de la fenêtre */
+}
+
+/* S'assurer que le contenu du body occupe toute la hauteur de la fenêtre */
+body {
+    min-height: 100vh;
+}
+
+/* Styles pour la section Animaux */
+.Animaux {
+    text-align: center;
+    padding: 30px;
+    background-color: #30B800;
+}
+
+.Animaux h1 {
+    font-size: 2em;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+/* Styles pour la liste d'animaux */
+.animaux-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espacement entre les animaux */
+}
+
+/* Style pour chaque animal */
+.animal {
+    text-decoration: none; /* Enlever la décoration de lien */
+    width: 150px; /* Largeur uniforme pour chaque animal */
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.animal img {
+    width: 100%; /* Largeur complète de l'élément conteneur */
+    height: 150px; /* Hauteur fixe pour toutes les images */
+    object-fit: cover; /* Assure que l'image garde ses proportions sans déformation */
+    border-radius: 8px;
+}
+
+.animal p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Effet de survol pour agrandir l'animal */
+.animal:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive pour les petits écrans */
+@media (max-width: 768px) {
+    .animal {
+        width: 120px; /* Taille réduite sur les petits écrans */
+    }  
+}
