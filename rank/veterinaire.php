@@ -43,7 +43,7 @@ if ($user['rank'] != 1) {
                     <button class="action-btn">Occupation par animal</button>
                 </a>
                 </a>                <a href="../admin/view_review.php">
-                    <button class="action-btn">create Animal</button>
+                    <button class="action-btn">Revu d'Animal</button>
                 </a>
             </div>
         </div>
