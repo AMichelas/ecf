@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mar. 19 nov. 2024 à 13:55
+-- Généré le : mar. 19 nov. 2024 à 15:06
 -- Version du serveur : 10.4.32-MariaDB
 -- Version de PHP : 8.2.12
 
@@ -166,7 +166,7 @@ INSERT INTO `users` (`id`, `first_name`, `last_name`, `email`, `password`, `rank
 (1, 'Adrien', 'Michelas', 'michelasadrien@gmail.com', '$2y$10$t9YOUoAeqnwe6wSmtPO6P.uEmmWxmTLJr8iIV.8Z6sKhVjO8B88WC', 3),
 (5, 'veto', 'veto', 'test@test.fr', '$2y$10$AGt6zgYFMB74gCnflop9R.lYOweKiKs/xxi1utj9DEV.oyyUrYxCC', 1),
 (9, 'try', 'try', 'employertest@zoo.fr', '$2y$10$WxoEpgPTfkE6z2ytl1bYEuqtzlPgt843Ayijy6DgKbGikbn9HJYeO', 2),
-(10, 'José', 'Arcadia', 'josearcadia@arcadia.fr', '$2y$10$kamD870Ei4VlpDNv8Qpr3.TwIPAvLIEtCuIcWtpRqPPHjFu7IzUta', 3);
+(11, 'José', 'Arcadia', 'josearcadia@arcadia.fr', '$2y$10$il998.4NdrpajgurrDNboOhfnMfZpQCAnO2sfbWILGxlRchhCT03K', 3);
 
 -- --------------------------------------------------------
 
@@ -268,7 +268,7 @@ ALTER TABLE `services`
 -- AUTO_INCREMENT pour la table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT pour la table `vet_reviews`
